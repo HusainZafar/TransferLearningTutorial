@@ -1,6 +1,7 @@
 # Transfer Learning Tensorflow
 
 I followed Tensorflow's tutorial on retraining the final layer of Inception model and tested the results on the flowers dataset(mentioned in the tutorial) as well as on a custom dataset(cats vs dogs).
+
 This tutorial documents the same process along with the problems that I faced while doing so and the links to the soultions.
 
 
@@ -77,9 +78,13 @@ bazel-bin/tensorflow/examples/label_image/label_image  --graph=/tmp/output_graph
 
 #### Result:
 2017-06-05 13:05:24.554667: I tensorflow/examples/label_image/main.cc:251] daisy (2): 0.998173
+
 2017-06-05 13:05:24.554708: I tensorflow/examples/label_image/main.cc:251] sunflowers (3): 0.00125897
+
 2017-06-05 13:05:24.554717: I tensorflow/examples/label_image/main.cc:251] dandelion (4): 0.000368108
+
 2017-06-05 13:05:24.554725: I tensorflow/examples/label_image/main.cc:251] tulips (0): 0.000137791
+
 2017-06-05 13:05:24.554735: I tensorflow/examples/label_image/main.cc:251] roses (1): 6.20492e-05
 
 The flower was correctly detected.
@@ -102,6 +107,7 @@ Let's test on an image of a dog and a cat:
 ```
 Result:
 2017-06-05 13:25:35.234769: I tensorflow/examples/label_image/main.cc:251] dogs (1): 0.998014
+
 2017-06-05 13:25:35.234809: I tensorflow/examples/label_image/main.cc:251] cats (0): 0.00198587
 
 ![solid](https://github.com/HusainZafar/TransferLearningTutorial/blob/master/animals/cats/117.jpg?raw=true)
@@ -114,7 +120,7 @@ Result:
 2017-06-05 13:26:53.620725: I tensorflow/examples/label_image/main.cc:251] dogs (1): 1.00321e-05
 
 ### Errors encountered
-- E tensorflow/examples/label_image/main.cc:350] Running model failed: Not found: FeedInputs: unable to find feed output input
+- E tensorflow/examples/label_image/main.cc:350] Running model failed: Not found: FeedInputs: unable to     find feed output input
  Solution: https://github.com/tensorflow/serving/issues/295  @davidsmandrade
 
 - InvalidArgumentError (see above for traceback): NodeDef mentions attr 'dct_method' not in Op image:uint8; attr=channels ...
