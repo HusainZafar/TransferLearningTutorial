@@ -117,6 +117,7 @@ Result:
 ```
 Result:
 2017-06-05 13:26:53.620682: I tensorflow/examples/label_image/main.cc:251] cats (0): 0.99999
+
 2017-06-05 13:26:53.620725: I tensorflow/examples/label_image/main.cc:251] dogs (1): 1.00321e-05
 
 ### Errors encountered
