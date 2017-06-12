@@ -122,12 +122,15 @@ Result:
 
 ### Errors encountered
 - E tensorflow/examples/label_image/main.cc:350] Running model failed: Not found: FeedInputs: unable to     find feed output input
- Solution: https://github.com/tensorflow/serving/issues/295  @davidsmandrade
+ 
+  Solution: https://github.com/tensorflow/serving/issues/295  @davidsmandrade
 
 - InvalidArgumentError (see above for traceback): NodeDef mentions attr 'dct_method' not in Op image:uint8; attr=channels ...
- Solution: Tensorflow version issues. Graph was created using another version and being tested using another version.
+ 
+  Solution: Tensorflow version issues. Graph was created using another version and being tested using another version.
 - ImportError: cannot import name pywrap_tensorflow
-Solution: https://stackoverflow.com/a/35963479
+
+  Solution: https://stackoverflow.com/a/35963479
 
 License
 ----
