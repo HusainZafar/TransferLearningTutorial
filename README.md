@@ -69,6 +69,9 @@ tensorboard --logdir /tmp/retrain_logs
 ![Solid](https://github.com/HusainZafar/TransferLearningTutorial/blob/master/Visualize.png?raw=true)
 
 Trained model is stored as /tmp/output_graph.pb
+It is reused for further testing.
+
+/tmp/output_labels.txt contains the labels given for training, i.e., the folder names.
 
 Testing on an image 21652746_cc379e0eea_m.jpg:
 
