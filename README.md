@@ -2,7 +2,7 @@
 
 I followed Tensorflow's tutorial on retraining the final layer of Inception model and tested the results on the flowers dataset(mentioned in the tutorial) as well as on a custom dataset(cats vs dogs).
 
-This tutorial documents the same process along with the problems that I faced while doing so and the links to the soultions.
+This tutorial documents the same process along with the problems that I faced while doing so and the links to the solutions.
 
 
 ![N|Solid](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdjFiBlkV6tyAEE_nhizN1lJGWXwNJx1Y9CWBrUWvYUuIu_6hu)
@@ -90,10 +90,9 @@ bazel-bin/tensorflow/examples/label_image/label_image  --graph=/tmp/output_graph
 The flower was correctly detected.
 
 # Dataset 2: Cats Dogs dataset
-I downloaded 218 images of cats and dogs, each.
-I created a folder animals, containg cats and dogs folder, in the home directory.
+I downloaded 218 images of cats and dogs, each and created a folder 'animals', containg 'cats' and 'dogs' folders, in the home directory.
 
-Retrain on the animals folder:
+Retraining on the animals folder:
 ```sh
 bazel-bin/tensorflow/examples/image_retraining/retrain --image_dir ~/animals
 ```
