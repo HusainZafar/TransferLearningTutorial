@@ -105,7 +105,7 @@ Let's test on an image of a dog and a cat:
 
 ![Solid](https://github.com/HusainZafar/TransferLearningTutorial/blob/master/animals/dogs/132.jpg?raw=true)
 ```sh
-#bazel-bin/tensorflow/examples/label_image/label_image  --graph=/tmp/output_graph.pb --labels=/tmp/output_labels.txt  --output_layer=final_result  --image=$HOME/Pictures/132.jpg --input_layer=Mul
+bazel-bin/tensorflow/examples/label_image/label_image  --graph=/tmp/output_graph.pb --labels=/tmp/output_labels.txt  --output_layer=final_result  --image=$HOME/Pictures/132.jpg --input_layer=Mul
 ```
 Result:
 2017-06-05 13:25:35.234769: I tensorflow/examples/label_image/main.cc:251] dogs (1): 0.998014
@@ -115,7 +115,7 @@ Result:
 ![solid](https://github.com/HusainZafar/TransferLearningTutorial/blob/master/animals/cats/117.jpg?raw=true)
 
 ```sh
-#bazel-bin/tensorflow/examples/label_image/label_image  --graph=/tmp/output_graph.pb --labels=/tmp/output_labels.txt  --output_layer=final_result  --image=$HOME/Pictures/117.jpg --input_layer=Mul
+bazel-bin/tensorflow/examples/label_image/label_image  --graph=/tmp/output_graph.pb --labels=/tmp/output_labels.txt  --output_layer=final_result  --image=$HOME/Pictures/117.jpg --input_layer=Mul
 ```
 Result:
 2017-06-05 13:26:53.620682: I tensorflow/examples/label_image/main.cc:251] cats (0): 0.99999
