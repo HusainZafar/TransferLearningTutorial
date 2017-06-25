@@ -1,5 +1,10 @@
 # Transfer Learning Tensorflow
 
+Edit: The following contains the code for freezing the first k layers and retraining the last (n-k) layers:
+[Retraining multiple layers](Re-train%20multiple%20layers)
+
+[June Python Pune meetup slides](Presentation.pdf)
+
 I followed Tensorflow's tutorial on retraining the final layer of Inception model and tested the results on the flowers dataset(mentioned in the tutorial) as well as on a custom dataset(cats vs dogs).
 
 This tutorial documents the same process along with the problems that I faced while doing so and the links to the solutions.
